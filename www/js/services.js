@@ -15,7 +15,6 @@ getFavourites= function(){
 }
 removeFavourites = function(index){
 favourites.splice(index, 1);
-console.log(favourites);
 }
 return{
       getWeather: getWeather,
