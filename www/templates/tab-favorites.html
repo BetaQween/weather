@@ -1,0 +1,15 @@
+<ion-view view-title="Favorites">
+  <ion-content class="padding2">
+    <ion-item>
+        <h2>List of favorites:</h2>
+      </ion-item>
+    <ion-item>
+      <div>
+      <ul class='container' ng-repeat="fav in favorites  track by $index">
+        <li class='input1'>{{fav.query}}, {{fav.weather}}</li>
+        <button  class='button' ng-click='removeFromFavourites( $index)'>remove</button>
+      </ul>
+    </div>
+    </ion-item>
+  </ion-content>
+</ion-view>
